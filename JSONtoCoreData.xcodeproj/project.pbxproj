@@ -14,6 +14,12 @@
 		6828DBC61C63D296005BB1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6828DBC41C63D296005BB1DA /* LaunchScreen.storyboard */; };
 		6828DBD11C63D296005BB1DA /* JSONtoCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828DBD01C63D296005BB1DA /* JSONtoCoreDataTests.swift */; };
 		6828DBDC1C63D296005BB1DA /* JSONtoCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828DBDB1C63D296005BB1DA /* JSONtoCoreDataUITests.swift */; };
+		6828DBF51C63D595005BB1DA /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828DBF41C63D595005BB1DA /* NetworkController.swift */; };
+		6828DBF71C63D6AB005BB1DA /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828DBF61C63D6AB005BB1DA /* PostController.swift */; };
+		68BB59451C63F1E800CF5B29 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB59421C63F1E800CF5B29 /* Post.swift */; };
+		68BB59461C63F1E800CF5B29 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB59431C63F1E800CF5B29 /* Post+CoreDataProperties.swift */; };
+		68BB59471C63F1E800CF5B29 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB59441C63F1E800CF5B29 /* Stack.swift */; };
+		68BB594A1C63F20100CF5B29 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68BB59481C63F20100CF5B29 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		6828DBD71C63D296005BB1DA /* JSONtoCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONtoCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6828DBDB1C63D296005BB1DA /* JSONtoCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONtoCoreDataUITests.swift; sourceTree = "<group>"; };
 		6828DBDD1C63D296005BB1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6828DBF41C63D595005BB1DA /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		6828DBF61C63D6AB005BB1DA /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		68BB59421C63F1E800CF5B29 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		68BB59431C63F1E800CF5B29 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		68BB59441C63F1E800CF5B29 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		68BB59491C63F20100CF5B29 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,12 @@
 			children = (
 				6828DBBB1C63D296005BB1DA /* AppDelegate.swift */,
 				6828DBBD1C63D296005BB1DA /* ViewController.swift */,
+				6828DBF41C63D595005BB1DA /* NetworkController.swift */,
+				6828DBF61C63D6AB005BB1DA /* PostController.swift */,
+				68BB59421C63F1E800CF5B29 /* Post.swift */,
+				68BB59431C63F1E800CF5B29 /* Post+CoreDataProperties.swift */,
+				68BB59441C63F1E800CF5B29 /* Stack.swift */,
+				68BB59481C63F20100CF5B29 /* Model.xcdatamodeld */,
 				6828DBBF1C63D296005BB1DA /* Main.storyboard */,
 				6828DBC21C63D296005BB1DA /* Assets.xcassets */,
 				6828DBC41C63D296005BB1DA /* LaunchScreen.storyboard */,
@@ -257,7 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6828DBBE1C63D296005BB1DA /* ViewController.swift in Sources */,
+				6828DBF71C63D6AB005BB1DA /* PostController.swift in Sources */,
 				6828DBBC1C63D296005BB1DA /* AppDelegate.swift in Sources */,
+				68BB59451C63F1E800CF5B29 /* Post.swift in Sources */,
+				68BB59471C63F1E800CF5B29 /* Stack.swift in Sources */,
+				68BB594A1C63F20100CF5B29 /* Model.xcdatamodeld in Sources */,
+				68BB59461C63F1E800CF5B29 /* Post+CoreDataProperties.swift in Sources */,
+				6828DBF51C63D595005BB1DA /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +508,7 @@
 				6828DBE21C63D296005BB1DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6828DBE31C63D296005BB1DA /* Build configuration list for PBXNativeTarget "JSONtoCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +517,7 @@
 				6828DBE51C63D296005BB1DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6828DBE61C63D296005BB1DA /* Build configuration list for PBXNativeTarget "JSONtoCoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,8 +526,22 @@
 				6828DBE81C63D296005BB1DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68BB59481C63F20100CF5B29 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68BB59491C63F20100CF5B29 /* Model.xcdatamodel */,
+			);
+			currentVersion = 68BB59491C63F20100CF5B29 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6828DBB01C63D296005BB1DA /* Project object */;
 }
